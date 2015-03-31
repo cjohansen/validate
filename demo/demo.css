@@ -1,0 +1,22 @@
+label,
+p {
+  display: block;
+  margin: 10px;
+}
+
+label .text {
+  display: inline-block;
+  width: 5em;
+}
+
+.input {
+  width: 12em;
+}
+
+.invalid {
+  border-color: red;
+}
+
+.message {
+  color: red;
+}

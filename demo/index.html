@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form validation without tight coupling to the DOM</title>
+    <link rel="stylesheet" type="text/css" href="demo.css">
+  </head>
+  <body>
+    <form action="" method="get">
+      <label for="email">
+        <span class="text">Email</span>
+        <input type="email" name="email" id="email" class="input">
+      </label>
+      <p class="message" data-errors-for="email"></p>
+      <label for="password">
+        <span class="text">Password</span>
+        <input type="password" name="password" id="password" class="input">
+      </label>
+      <p class="message" data-errors-for="password"></p>
+      <label class="faded">
+        <input type="checkbox" name="remember-me" checked>
+        Remember me
+      </label>
+      <p><input type="submit" class="btn-primary" value="Logg inn"></p>
+    </form>
+    <script src="../validate.js"></script>
+    <script src="demo.js"></script>
+  </body>
+</html>
