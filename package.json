@@ -1,0 +1,28 @@
+{
+  "name": "validate",
+  "version": "0.0.0",
+  "description": "Example code to accompany two Sitepoint articles on avoiding tight coupling with the DOM",
+  "main": "validate.js",
+  "author": "Christian Johansen (christian@cjohansen.no)",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start karma.conf.js",
+    "bundle": "browserify -s validate -o validate.js index.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-browserify": "^4.1.0",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.5",
+    "karma-referee": "^0.4.2",
+    "referee": "^1.1.1",
+    "referee-sinon": "^1.0.2",
+    "sinon": "^1.14.1",
+    "syn": "git+https://github.com/bitovi/syn.git#v0.1.2"
+  }
+}
